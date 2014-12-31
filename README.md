@@ -27,4 +27,31 @@ The source is here: The OpenCV libraraies, include files, and other required lib
 
 Please let me know if there are any questions. I am releasing this under GNU, but if WPI would like it to be under another license, I have no problem changing it. 
 
-The source can be found here.
+-----------------------
+
+For anyone else wanting to use this
+To: Install on Rio 
+1, transfer to the lib_OpenCV folder to /usr/local/lib (such that you have /usr/local/lib/lib_OpenCV/) 
+Note: it contains symlinks so use rsync to transfer or just FTP
+2. on the rio create a textfile `/etc/ld.so.conf.d/opencv.conf` that contains the line `/usr/local/lib/lib_OpenCV`
+3. Save and exit the file then run `ldconfig` in the rio terminal
+4. you may get some lines that say xxx file is not a symlink, thats ok
+5. done
+
+To use the libraries in C++
+1. Copy OpenCV parent folder to your development computer 
+2. Add OpenCV/includes to your C++ includes path
+3. Add OpenCV/lib_OpenCV to your lib path
+4. Add which ever libraries you use to your linker (opencv_highgui opencv_core opencv_imgproc pthread)
+5. Those libraries will probably suit 95% of people.
+6. add #include <opencv2/opencv.hpp> and using namespace cv;
+7. Done
+
+> The project here has the includes and arm libraries required as local directories, so if you use this eclipse project, and have the cross compiler set up, it should find all required files automatically. The build path is already set to search the corresponding directories within the project
+
+To use in Java
+1. add  OpenCV/lib_OpenCV/java/opencv-2410.jar to your java project
+2. import org.opencv.core.Core; and any other libraries
+3. NOTE: I NEVER TESTED JAVA, SO PLEASE REPORT
+
+Please let me know if there are any questions
