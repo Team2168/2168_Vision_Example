@@ -32,6 +32,7 @@ Please let me know if there are any questions. I am releasing this under GNU, bu
 For anyone else wanting to use this
 
  ### To: Install on Rio
+ 
 1. transfer to the lib_OpenCV folder to /usr/local/lib (such that you have /usr/local/lib/lib_OpenCV/) Note: it contains symlinks so use rsync to transfer or just FTP
 2. on the rio create a textfile `/etc/ld.so.conf.d/opencv.conf` that contains the line `/usr/local/lib/lib_OpenCV
 3. Save and exit the file then run `ldconfig` in the rio terminal
