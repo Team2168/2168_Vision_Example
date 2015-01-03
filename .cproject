@@ -1,87 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
 	<storageModule moduleId="org.eclipse.cdt.core.settings">
-		<cconfiguration id="cdt.managedbuild.config.gnu.exe.debug.287960576.331999297">
-			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.exe.debug.287960576.331999297" moduleId="org.eclipse.cdt.core.settings" name="Tegra">
-				<externalSettings>
-					<externalSetting>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/Vision"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/Vision/Debug"/>
-						<entry flags="RESOLVED" kind="libraryFile" name="Vision" srcPrefixMapping="" srcRootPath=""/>
-					</externalSetting>
-				</externalSettings>
-				<extensions>
-					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
-				</extensions>
-			</storageModule>
-			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.exe.debug.287960576.331999297" name="Tegra" parent="cdt.managedbuild.config.gnu.exe.debug">
-					<folderInfo id="cdt.managedbuild.config.gnu.exe.debug.287960576.331999297." name="/" resourcePath="">
-						<toolChain id="cdt.managedbuild.toolchain.gnu.exe.debug.1041492443" name="Linux GCC" nonInternalBuilderId="cdt.managedbuild.target.gnu.builder.exe.debug" superClass="cdt.managedbuild.toolchain.gnu.exe.debug">
-							<targetPlatform id="cdt.managedbuild.target.gnu.platform.exe.debug.1291026598" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.exe.debug"/>
-							<builder buildPath="${workspace_loc:/Vision}/Tegra" id="cdt.managedbuild.target.gnu.builder.exe.debug.745554097" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.exe.debug"/>
-							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1076529337" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
-							<tool command="arm-linux-gnueabihf-g++" id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1591744794" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug">
-								<option id="gnu.cpp.compiler.exe.debug.option.optimization.level.1615310438" name="Optimization Level" superClass="gnu.cpp.compiler.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
-								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.480453901" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.default" valueType="enumerated"/>
-								<option id="gnu.cpp.compiler.option.dialect.std.176776363" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
-								<option id="gnu.cpp.compiler.option.include.paths.717482461" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/home/OpenCVArm/opencv/platforms/linux/build_hardfp/install/include/"/>
-									<listOptionValue builtIn="false" value="/usr/arm-linux-gnueabihf/include/c++/4.6.3"/>
-									<listOptionValue builtIn="false" value="/home/CurlArm/curl/include/"/>
-								</option>
-								<option id="gnu.cpp.compiler.option.other.verbose.1385259200" name="Verbose (-v)" superClass="gnu.cpp.compiler.option.other.verbose" value="true" valueType="boolean"/>
-								<option id="gnu.cpp.compiler.option.other.other.1382644061" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0  " valueType="string"/>
-								<option id="gnu.cpp.compiler.option.other.pic.1749751968" name="Position Independent Code (-fPIC)" superClass="gnu.cpp.compiler.option.other.pic" value="true" valueType="boolean"/>
-								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.679633098" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
-							</tool>
-							<tool command="arm-linux-gnueabihf-gcc" id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.2057228185" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug">
-								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.exe.debug.option.optimization.level.110770594" name="Optimization Level" superClass="gnu.c.compiler.exe.debug.option.optimization.level" valueType="enumerated"/>
-								<option id="gnu.c.compiler.exe.debug.option.debugging.level.677896793" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" value="gnu.c.debugging.level.default" valueType="enumerated"/>
-								<option id="gnu.c.compiler.option.dialect.std.598826233" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
-								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.345363720" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
-							</tool>
-							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.592185563" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug">
-								<option defaultValue="true" id="gnu.c.link.option.shared.144207140" name="Shared (-shared)" superClass="gnu.c.link.option.shared" valueType="boolean"/>
-							</tool>
-							<tool command="arm-linux-gnueabihf-g++" id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.542811351" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
-								<option defaultValue="true" id="gnu.cpp.link.option.shared.1306347498" name="Shared (-shared)" superClass="gnu.cpp.link.option.shared" value="false" valueType="boolean"/>
-								<option id="gnu.cpp.link.option.paths.540601084" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="/home/OpenCVArm/opencv/platforms/linux/build_hardfp/install/lib"/>
-									<listOptionValue builtIn="false" value="/usr/arm-linux-gnueabihf/lib"/>
-									<listOptionValue builtIn="false" value="/usr/local/lib"/>
-								</option>
-								<option id="gnu.cpp.link.option.libs.1658302677" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
-									<listOptionValue builtIn="false" value="opencv_highgui"/>
-									<listOptionValue builtIn="false" value="opencv_core"/>
-									<listOptionValue builtIn="false" value="opencv_imgproc"/>
-									<listOptionValue builtIn="false" value="pthread"/>
-									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="curl"/>
-									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="rt"/>
-								</option>
-								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.2141609292" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
-									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
-									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
-								</inputType>
-							</tool>
-							<tool command="arm-linux-gnueabihf-as" id="cdt.managedbuild.tool.gnu.assembler.exe.debug.1376014062" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.debug">
-								<option id="gnu.both.asm.option.flags.928060092" name="Assembler flags" superClass="gnu.both.asm.option.flags" value="" valueType="string"/>
-								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1158458632" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
-							</tool>
-						</toolChain>
-					</folderInfo>
-					<sourceEntries>
-						<entry excluding="src/testCurl.cpp|src/usbmain.cpp|src/test.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
-					</sourceEntries>
-				</configuration>
-			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
-		</cconfiguration>
 		<cconfiguration id="cdt.managedbuild.config.gnu.exe.debug.287960576.47579162">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.exe.debug.287960576.47579162" moduleId="org.eclipse.cdt.core.settings" name="Rio_Beagle">
 				<externalSettings>
@@ -92,35 +11,33 @@
 					</externalSetting>
 				</externalSettings>
 				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.exe.debug.287960576.47579162" name="Rio_Beagle" parent="cdt.managedbuild.config.gnu.exe.debug">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.exe.debug.287960576.47579162" name="Rio_Beagle" parent="cdt.managedbuild.config.gnu.exe.debug">
 					<folderInfo id="cdt.managedbuild.config.gnu.exe.debug.287960576.47579162." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.exe.debug.1111129705" name="Linux GCC" nonInternalBuilderId="cdt.managedbuild.target.gnu.builder.exe.debug" superClass="cdt.managedbuild.toolchain.gnu.exe.debug">
 							<targetPlatform id="cdt.managedbuild.target.gnu.platform.exe.debug.2023187796" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.exe.debug"/>
-							<builder buildPath="${workspace_loc:/Vision}/Debug" id="cdt.managedbuild.target.gnu.builder.exe.debug.1888932229" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.exe.debug"/>
+							<builder autoBuildTarget="all" buildPath="${workspace_loc:/2168_Vision_Example}/Rio_Beagle" cleanBuildTarget="clean" id="org.eclipse.cdt.build.core.internal.builder.698329192" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="org.eclipse.cdt.build.core.internal.builder"/>
 							<tool id="cdt.managedbuild.tool.gnu.archiver.base.824679730" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
-							<tool command="arm-linux-gnueabi-g++-4.6" id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.512476277" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug">
+							<tool command="arm-frc-linux-gnueabi-g++" id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.512476277" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug">
 								<option id="gnu.cpp.compiler.exe.debug.option.optimization.level.1930501771" name="Optimization Level" superClass="gnu.cpp.compiler.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.more" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.1853235021" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.default" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.dialect.std.1909490318" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.25057429" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/_Includes/OpenCV/2.4.10}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/_Includes/c++/4.6.3}&quot;"/>
 								</option>
-								<option id="gnu.cpp.compiler.option.other.verbose.1694295415" name="Verbose (-v)" superClass="gnu.cpp.compiler.option.other.verbose" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.other.verbose.1694295415" name="Verbose (-v)" superClass="gnu.cpp.compiler.option.other.verbose" value="false" valueType="boolean"/>
 								<option id="gnu.cpp.compiler.option.other.other.801173236" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0" valueType="string"/>
 								<option id="gnu.cpp.compiler.option.other.pic.447192392" name="Position Independent Code (-fPIC)" superClass="gnu.cpp.compiler.option.other.pic" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.warnings.allwarn.309620916" name="All warnings (-Wall)" superClass="gnu.cpp.compiler.option.warnings.allwarn" value="true" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.895521955" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
-							<tool command="arm-linux-gnueabi-gcc-4.6" id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.99408402" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug">
+							<tool command="arm-frc-linux-gnueabi-gcc" id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.99408402" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug">
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.exe.debug.option.optimization.level.274598742" name="Optimization Level" superClass="gnu.c.compiler.exe.debug.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.exe.debug.option.debugging.level.1631819063" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" value="gnu.c.debugging.level.default" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.dialect.std.573294118" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
@@ -129,7 +46,7 @@
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.275046475" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug">
 								<option defaultValue="true" id="gnu.c.link.option.shared.1465129777" name="Shared (-shared)" superClass="gnu.c.link.option.shared" valueType="boolean"/>
 							</tool>
-							<tool command="arm-linux-gnueabi-g++-4.6" id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.1075655572" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
+							<tool command="arm-frc-linux-gnueabi-g++" id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.1075655572" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
 								<option defaultValue="true" id="gnu.cpp.link.option.shared.23454359" name="Shared (-shared)" superClass="gnu.cpp.link.option.shared" value="false" valueType="boolean"/>
 								<option id="gnu.cpp.link.option.paths.1388727206" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/_Libraries/softFP/lib_OpenCV}&quot;"/>
@@ -142,12 +59,16 @@
 									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="pthread"/>
 									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="rt"/>
 								</option>
+								<option id="gnu.cpp.link.option.other.2039614465" name="Other options (-Xlinker [option])" superClass="gnu.cpp.link.option.other" valueType="stringList">
+									<listOptionValue builtIn="false" value="-rpath &quot;${ProjDirPath}/_Libraries/softFP/lib_cpp&quot;"/>
+									<listOptionValue builtIn="false" value="-rpath &quot;${ProjDirPath}/_Libraries/softFP/lib_OpenCV&quot;"/>
+								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.710085067" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
 								</inputType>
 							</tool>
-							<tool command="arm-linux-gnueabi-as-4.6" id="cdt.managedbuild.tool.gnu.assembler.exe.debug.61596229" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.debug">
+							<tool command="arm-frc-linux-gnueabi-as" id="cdt.managedbuild.tool.gnu.assembler.exe.debug.61596229" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.debug">
 								<option id="gnu.both.asm.option.flags.505346471" name="Assembler flags" superClass="gnu.both.asm.option.flags" value="" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.749579302" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -166,14 +87,14 @@
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Rio2410"/>
+		<configuration configurationName="Tegra"/>
 		<configuration configurationName="Release">
 			<resource resourceType="PROJECT" workspacePath="/Vision"/>
 		</configuration>
-		<configuration configurationName="Tegra"/>
 		<configuration configurationName="Debug">
 			<resource resourceType="PROJECT" workspacePath="/Vision"/>
 		</configuration>
-		<configuration configurationName="Rio2410"/>
 		<configuration configurationName="Rio_Beagle"/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>

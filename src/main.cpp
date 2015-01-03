@@ -33,7 +33,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 #include <iostream>
 #include <iomanip>
 #include <sstream>
-
+#include <unistd.h>
 #include <pthread.h>
 
 using namespace cv;
