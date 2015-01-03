@@ -6,7 +6,7 @@ Attached is a compiled version of the OpenCV 2.4.10 libraries, which we patched 
 
 The patch exposes certain controls to modify the USB camera image settings. The patch also expands the videoCapture contstructor to accept framesize and fps so the user can specify those paramters and have the camera set accordingly on instantiation. All settings are done at the driver hardware level using V4L2 api.
 
-This patch is only required if using the Microsoft HD 3000 USB camera on the RoboRio, while it may support other USB cameras, we can not guarantee that it does. This patch is not needed if you are using an IP camera or other external capture device.
+This patch is only required if using the Microsoft HD 3000 USB camera, and while it may support other USB cameras, we can not guarantee that it does. This patch is not needed if you are using an IP camera or other external capture device.
 
 The patch is already compiled into the attached libraries, but if you would like to see what we modified, our changes to OpenCV are public here: https://github.com/KHEngineering/OpenCV_For_FRC_RoboRio/commit/aebc1d9261da2a44bdbcbac93398d48b211dafba
 
@@ -77,7 +77,7 @@ The easiest way to compile the example on your own from source is to clone this 
 10. you may get some lines that say xxx file is not a symlink, thats ok
 11. done
 
-### Transfer and Run the Example
+### Transfer and Run the Example on the RoboRio
 
 1. Use the same method as before to transfer the 2168_Vision_Example file from the Rio_Beagle/ directory to the RoboRio. You can place it wherever youd like, but a good place would be to create a new folder called Vision inside the home directory and place the binary there.
 2. After transfering the binary, connect to the RoboRio via shh and navigate to the directory you placed the binary in using the `cd` command e.x. `cd /home/Vision/`
@@ -86,6 +86,10 @@ The easiest way to compile the example on your own from source is to clone this 
 5. If you see a help list, you have sucessfully installed the OpenCV library and can run the program, proceed to the next section to learn about the different features of the program.
 6. If you get a message like "Can not find xxx.so" Make sure you completed the installation of OpenCV above.
 
+
+### Transfer and Run the Example on a BeagleBone (white/black)
+
+If you will to run this on a beaglebone instead of the RoboRio, the steps are exactly the same as above for the Rio, just instead of the RoboRio, use the BeagleBone.
 
 ### Command Line Arguments
 
@@ -117,9 +121,12 @@ you can use the -help flag to see all other flags supported.
 > The project here has the includes and arm libraries required as local directories, so if you use this eclipse project, and have the FRC cross compiler installed, it should find all required files automatically. The build path is already set to search the corresponding directories within the project
 
 ### To use in Java
-1. add  OpenCV/lib_OpenCV/java/opencv-2410.jar to your java project
-2. import org.opencv.core.Core; and any other libraries
-3. NOTE: I NEVER TESTED JAVA, SO PLEASE REPORT its use
+1. Create a new Java Project
+2. Copy the _Libraries folder to your development machine
+3. add  _Libraries/softFP/lib_OpenCV/java/opencv-2410.jar to your java project build path
+4. import org.opencv.core.Core; and any other libraries (look up opencv Java documentation for help)
+5. Should be good to go!
+6. NOTE: I NEVER TESTED JAVA, SO PLEASE REPORT its use
 
 Please let me know if there are any questions
 
@@ -127,7 +134,6 @@ We develop most of our FRC stuff on Ubuntu 14.04, and use our own cross compiler
 
 The above have been tested on sucessfully on different Windows 7 machines, using the latest FRC tools, and the latest FRC Image as of 1/2/2015. We have confirmed successful processing of USB and IP camera images, as well as successful modification of the USB image settings using OpenCV through our patch. Settings for the Axis IP web cam are done through the Axis Camera webpage.
 
-If you will to run this on a beaglebone instead of the RoboRio, the steps are exactly the same, just instead of the RoboRio, use the BeagleBone.
 
 We also have this running on the Nvidia Tegra, and will be releasing the libraries and build configs for the Tegra Very soon. 
 Happy New Year
