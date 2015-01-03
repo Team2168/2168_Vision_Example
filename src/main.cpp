@@ -597,8 +597,16 @@ void *VideoCap(void *args)
 		frame = imread(struct_ptr->IMAGE_FILE);
 		pthread_mutex_unlock(&frameMutex);
 
-		cout<<"File Loaded: Starting Processing Thread"<<endl;
-		progRun = true;
+		if (!frame.empty())
+		{
+			cout<<"File Loaded: Starting Processing Thread"<<endl;
+			progRun = true;
+		}
+		else
+		{
+			cout<<"Error Loading File"<<endl;
+			exit(0);
+		}
 
 
 	}
