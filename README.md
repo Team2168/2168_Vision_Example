@@ -57,9 +57,9 @@ The easiest way to compile the example on your own from source is to clone this 
 8. OpenCV Libraries compiled for Armv7 are included in the _Libraries Directory
 9. Sample Images are included in the Images Directory as well.
 10. Right Click on the Project Name, Select Build Configurations, and select Build All
-11. If the Build was successfull a new Directory will be created called Rio_Beagle, and inside of it will be the 2168_Vision_Example Binary
+11. If the Build was successfull a new Directory will be created called Rio_Beagle, and inside of it will be the 2168_Vision_Example Binary (You may need to refresh your project explorer window so the new folder shows up by right clicking on the project and selecting refresh)
 12. You have successfully compiled the program, you can now modify it can recompile it with your changes
-13. If you are unsucessfully at recompiling please let us know via email or post something on chiefdelphi.
+13. If you are unsucessfully at recompiling please let us know via email or post something on chiefdelphi. The offical thread for this release on chiefdelphi is http://www.chiefdelphi.com/forums/showthread.php?threadid=131905
  
 
 ## How to run the Vision Binary on the RoboRio
