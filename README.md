@@ -61,7 +61,7 @@ The easiest way to compile the example on your own from source is to clone this 
 13. If you are unsucessfully at recompiling please let us know via email or post something on chiefdelphi.
  
 
-## How to run your Vision Binary on the RoboRio
+## How to run the Vision Binary on the RoboRio
 
 ### Installing OpenCV on the RoboRio
 1. transfer to the lib_OpenCV folder inside of _Libraries/softfp/ to the Roborio's /usr/local/lib directory (such that you have /usr/local/lib/lib_OpenCV/ on the RoboRio) If using windows you can use WinSCP, if using linux or putty use rsync instead of cp command because the files contain symlinks. You will have to install rsync on the Rio first using opkg update, opkg install rsync, while connected to the internet.
