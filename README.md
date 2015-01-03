@@ -17,11 +17,11 @@ This example can be ran directly on the RoboRio or a number of other Armv7 based
 
 The source and executable are included. To run the program all you need to do is install OpenCV as per the instructions below, and then transfer the executable over and run it. Some examples on how to run it are
 
-./2168_Vision_Example -c 10.21.68.90 -v -t  // this will run and capture frames from a axis camera at IP address 10.21.68.90, it will also display the processed image (because of the visualize flag -v, and will output the time it takes to process each frame because of the timing flag -t)
+`./2168_Vision_Example -c 10.21.68.90 -v -t ` // this will run and capture frames from a axis camera at IP address 10.21.68.90, it will also display the processed image (because of the visualize flag -v, and will output the time it takes to process each frame because of the timing flag -t)
 
-./2168_Vision_Example -u  -v -t  // this will run can capture frames from the usb camera at /dev/video0
+`./2168_Vision_Example -u  -v -t ` // this will run can capture frames from the usb camera at /dev/video0
 
-.2168_Vision_Example -f /home/image.jpg //will process a static image
+`.2168_Vision_Example -f /home/image.jpg `//will process a static image without any output, add flags if you wish
 
 you can use the -help flag to see all other flags supported. 
 
@@ -42,6 +42,7 @@ We have also tested this be be sucessuly at running on a beagle-bone black runni
 Assumptions: I already assume you have followed the screen steps guide on how to set, up and install your Windows Development computer for C++ FRC development. Make sure you can sucessfully build and deploy a test iterative project.
 
 Official Directions can be found here: [Screensteps Live](https://wpilib.screenstepslive.com/s/4485/m/13810/l/145002-installing-eclipse-c-java)
+
 Additional Troubleshooting tips can be found here: [2168 Control System Website](http://controls.team2168.org)
 
 The easiest way to compile the example on your own from source is to clone this git repo into your eclipse. The project is already set up with all the paths so it should build without a problem.
