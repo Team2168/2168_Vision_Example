@@ -15,8 +15,22 @@ This example can be ran directly on the RoboRio or a number of other Armv7 based
 
 ## Program Outut
 
-This is an example image taken from the camera as input to the algorithm
-![](images/ProgramOututForReadme/input.png)
+This is an example image taken from the camera as input to the algorithm:
+
+![](images/ProgramOututForReadme/input.jpg)
+
+
+This is an example image produced by the algorithm identifying the countors or interest:
+
+![](images/ProgramOututForReadme/output.png)
+
+This is an example image produced by the algorithm idenfiying the contors within an image:
+
+![](images/ProgramOututForReadme/contours_output.jpg)
+
+This is an example image showing what the console will produce when verbose debugging is enabled:
+
+![](images/ProgramOututForReadme/console_output.jpg)
 
 -----------------------
 
