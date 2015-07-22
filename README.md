@@ -1,7 +1,6 @@
 2168_Vision_Example
 ===================
 
-
 Attached is a compiled version of the OpenCV 2.4.10 libraries, which we patched to support the particular camera functions of the USB Microsoft HD 3000 web cam.
 
 The patch exposes certain controls to modify the USB camera image settings. The patch also expands the videoCapture contstructor to accept framesize and fps so the user can specify those paramters and have the camera set accordingly on instantiation. All settings are done at the driver hardware level using V4L2 api.
@@ -14,6 +13,14 @@ I have also included an example vision application written in C++ which uses Ope
 
 This example can be ran directly on the RoboRio or a number of other Armv7 based processors such as the beaglebone family. The example supports processing images from a USB Camera, IP Axis Camera, or from a file. I have modified the program to select command line arguments which will allow it to capture images from a IP axis camera, webcam, or a file. 
 
+## Program Outut
+
+This is an example image taken from the camera as input to the algorithm
+![](images/ProgramOututForReadme/input.png)
+
+-----------------------
+
+## How to Execture Program
 
 The source and executable are included. To run the program all you need to do is install OpenCV as per the instructions below, and then transfer the executable over and run it. Some examples on how to run it are
 
