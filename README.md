@@ -3,7 +3,7 @@
 
 Attached is a compiled version of the OpenCV 2.4.10 libraries, which we patched to support the particular camera functions of the USB Microsoft HD 3000 web cam.
 
-The patch exposes certain controls to modify the USB camera image settings. The patch also expands the videoCapture contstructor to accept framesize and fps so the user can specify those paramters and have the camera set accordingly on instantiation. All settings are done at the driver hardware level using V4L2 api.
+The patch exposes certain controls to modify the USB camera image settings. The patch also expands the videoCapture contstructor to accept framesize and fps so the user can specify those parameters and have the camera set accordingly on instantiation. All settings are done at the driver hardware level using V4L2 api.
 
 This patch is only required if using the Microsoft HD 3000 USB camera, and while it may support other USB cameras, we can not guarantee that it does. This patch is not needed if you are using an IP camera or other external capture device.
 
